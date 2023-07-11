@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+body{
+    background: gray;
+}
+/* Estilos del header */
+.menu-fondo{
+    background: black;
+}
+.color-font{
+    color: white;
+}
+.col-icon{
+    color: white;
+}
+.col-icon:hover{
+    color: white;
+}
+
+.color-font:hover{
+    background-color: #940802;
+    border-radius: 10px;
+}
+
+.pages-edit{
+    color: white;
+}
+.pages-edit:hover{
+    background: #940802;
+}
+ /* Estilos del main */
+ /* mobiel version vertical */
+
+ main .darth-vader{
+    display: none;
+ }
+
+ main .form-text .textos{
+    text-align: center;
+ }
+ main .form-text .textos h1{
+    font-size: 1.5em;
+ }
+ main .form-text .textos h2{
+    font-size: 1.2em;
+ }
+
+ main .form-text .form{
+    text-align: center;
+ }
+ main .form-text .form form {
+    display: flex;
+    justify-content: center;
+    height: 12em;
+    margin-bottom: 1em;
+ }
+ main .form-text .form form fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #940802;
+    height: 12em;
+    width: 20em;
+    box-shadow: 5px 4px 3px black;
+ }
+ main .form-text .form form fieldset label{
+    height: 2em;
+    font-size: 1.7em;
+ }
+ main .form-text .form form fieldset label input{
+    height: 5em;
+ }
+
+ main div.form span button{
+    box-shadow: 5px 4px 3px black;
+    padding: 0.3em;
+}
+.darth-icon-movil{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.darth-icon-movil img{
+   height: 3em;
+   
+}
+/* Estilos del footer */
+footer{
+    display: flex;
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px; 
+}
+footer p{
+    color: white;
+    font-size: 15px;
+}
+
+ /* version de desktop */
+ @media screen and (min-width:1024px){
+    body{
+        background: gray;
+    }
+    main .darth-vader{
+        display: block;
+    }
+    main .darth-vader img{
+        height: 600px;
+        width: 50vw;
+    }
+    .darth-icon-movil{
+        display: none;
+    }
+    main .padre-index{
+        display: flex;
+    }
+    main .form-text{
+        width: 50vw;
+    }
+    footer{
+        margin-top: 0;
+    }
+
+    /* dando estilos al h1 y al form */
+    main .form-text{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        color: black;
+    }
+ }
+
+
+/* ===============================contact estilos=============================================== */
+main .estamos{
+    text-align: center;
+    font-size: 2em;
+}
+main .padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+main .padre .content-lugar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gainsboro;
+    border: solid 2px black;
+    border-radius: 15px;
+    font-size: 1em;
+    padding: 0.5em;
+    box-shadow:2px 4px 3px black;
+}
+main .padre .content-lugar .info-map{
+    font-size: 0.5em;
+}
+main .padre .galeria-contact{
+    display: flex;
+    background: black;
+    border: solid 5px black;
+    border-radius: 15px;
+    gap: 0.2em;
+
+}
+main .padre .galeria-contact img{
+    height: 2em;
+    margin: 0 0.2em;
+}
+main .padre .comentario{
+    display: flex;
+    border-radius: 50px;
+    gap: 0.2em;
+}
+main .padre .comentario .comentario-input input{
+    text-align: start;
+    height: 2em;
+    font-size: 1em;
+}
+main .padre .comentario .img-comentario img{
+    height: 2em;
+    background-color: gainsboro;
+    border-radius: 50px;
+}
+main .padre span button{
+    background-color: #940802;
+    color: white;
+    height: 3em;
+    width: 5em;
+    border-radius: 15px;
+
+}
+@media screen and (min-width:992px){
+    main .padre .content-lugar .info-map{
+        font-size: 1em;
+    }
+    main .padre .galeria-contact img{
+        height: 4em;
+    }
+    
+    main .padre .comentario .comentario-input input{
+        height: 2em;
+        font-size: 1.7em;
+    }
+    main .padre .comentario .img-comentario img{
+        height: 3em;
+    }
+
+}
+/* ========================Estilos de Perfil===================================================== */
+main .padre-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .padre-perfil .img-portada img{
+    width: 80vw;
+    border-radius: 15px;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+main .padre-perfil .img-perfil{
+    display: flex;
+    position: relative;
+    top: -2.5em;
+}
+main .padre-perfil .img-perfil img{
+    height: 5em;
+    border: solid 1px black;
+}
+main .padre-perfil .nombre{
+    position: relative;
+    top: -1.2em;
+}
+main .padre-perfil .img-port1 {
+    display: none;
+}
+main .padre-perfil .info-galeria{
+    position: relative;
+    top: -2em;
+}
+main .padre-perfil .info-galeria .galeria-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0.5em 1em;
+    background: aqua;
+    border-radius: 15px;
+}
+main .padre-perfil .info-galeria .galeria-perfil img{
+    height: 12em;
+    width: 70vw;
+    border-radius: 15px;
+}
+main .padre-perfil .info-galeria .info-perfil{
+    display: none;
+}
+@media screen and (min-width:992px){
+    main .padre-perfil .img-portada{
+        display: none;
+    }
+    main .padre-perfil .img-port1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: 75vh;
+    }
+    main .padre-perfil .img-port1 img{
+        height: 100vh;
+        width: 90vw;
+        border-radius: 15px;
+    }
+    main .padre-perfil .img-perfil{
+        display: flex;
+        justify-content: end;
+        position: relative;
+        top: -12em;
+    }
+    main .padre-perfil .img-perfil img{
+        height: 15em;  
+        border-radius: 15px;
+    }
+    main .padre-perfil .nombre{
+        font-size: 4em;
+        top: -3em;
+        color: white;
+    }
+    main .padre-perfil .info-galeria{
+        position: relative;
+        top: -12em;
+        height: 35em;
+        width: 75em;
+        padding: 1em;
+        z-index: 2;
+        background-color: white;
+        display: flex;
+        border-radius: 15px;
+    }
+    main .padre-perfil .info-galeria .info-perfil{
+        display: block;
+        width: 30vw;
+        font-size: 1.5em;
+    }
+    
+    main .padre-perfil .info-galeria .galeria-perfil img{
+        background-color: #940802;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    main .padre-perfil .info-galeria .galeria-perfil .img-1{
+        height: 100%;
+        grid-column: span 2;
+    }
+    main .padre-perfil .info-galeria .galeria-perfil{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 60% 40%;
+        background-color: aqua;
+        width: 70vw;
+    
+    }
+    main .padre-perfil .info-galeria .galeria-perfil .img-2{
+        width: 100%;
+        height: 100%;
+    }
+    main .padre-perfil .info-galeria .galeria-perfil .img-3{
+        height: 100%;
+        width: 100;
+    }
+    
+
+}
+
+/* ===================EStilos de products============================================================== */
+
+main .padre-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .padre-product .formas-pago{
+    background: gainsboro;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    border: solid 2px black;
+    border-radius: 10px;
+    
+}
+main .padre-product .formas-pago span button{
+    padding: 0.2em;
+    border-radius: 10px;
+    background-color: #940802;
+    color: white;
+    border: solid 2px black;
+}
+main .padre-product .galeri-product{
+    display: flex;
+    flex-direction: column;
+}
+main .padre-product .galeri-product .img-precio{
+    background: #940802;
+    border: solid 2px black;
+    margin: 0.5em 1em;
+}
+main .padre-product .galeri-product .img-precio .img img{
+    height: 70%;
+    width: 100%;
+}
+main .padre-product .galeri-product .img-precio:hover{
+    background: greenyellow;
+}
+main .padre-product .galeri-product .img-precio h4{
+    color: greenyellow;
+    margin-left: 0.5em;
+}
+main .padre-product .galeri-product .img-precio h3{
+    color: white;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+@media screen and (min-width:992px){
+    main .padre-product .formas-pago{
+        background: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    main .padre-product .formas-pago span button{
+        font-size: 2em;
+        border: solid 3px black;
+    }
+    main .padre-product .formas-pago span button:hover{
+        color: #940802;
+    }
+    main .padre-product .galeri-product{
+        flex-direction: row;
+    }
+}
+/* =====================Estilos de music================================================ */
+main .padre-m{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+main .padre-m .musica-coder{
+    background-color: #940802;
+    margin: 0.5em;
+    border: solid 2px black;
+    color: white;
+}
+main .padre-m .galeria-conten{
+    display: flex;
+    background-color: #940802;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+    border: solid 3px black;
+}
+main .padre-m .galeria-conten .img-txt img{
+    height: 100%;
+    width: 100%;
+}
+main .padre-m .galeria-conten .img-txt p{
+    font-size: 2em;
+}
+main .padre-m .galeria-conten .img-txt p:hover{
+    color: gold;
+}
+main .padre-m .galeria-conten .img-txt img:hover{
+    border: solid 2px gold;
+}
+
+main .padre-m .galeria-conten.mobile-none{
+    display: none;
+}
+@media screen and (min-width:992px){
+    main .padre-m .galeria-conten{
+        flex-direction: row;
+        gap: 1em;
+    }
+    main .padre-m .galeria-conten.mobile-none{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        margin: 2em;
+        border: solid 3px black;
+    }   
+}
